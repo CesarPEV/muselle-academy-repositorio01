@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#020C1E" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Muselle Academy" />
+    <meta name="description" content="Muselle Academy — Learn music online with expert instructors" />
+    <title>Muselle Academy</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      .initial-loader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #020C1E;
+        z-index: 9999;
+      }
+      .initial-loader__icon {
+        width: 80px;
+        height: 80px;
+        color: #E1C3FF;
+        animation: initial-loader-spin 2s linear infinite;
+      }
+      @keyframes initial-loader-spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="initial-loader" aria-hidden="true">
+        <svg class="initial-loader__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#initial-loader-clip)">
+            <path d="M30.7358 18.7749L34.5301 9.77829C35.7531 6.88074 37.8029 4.40789 40.4234 2.66877C43.0439 0.929645 46.1188 0.00138685 49.2638 0L45.4696 8.99657C44.2481 11.8952 42.1986 14.369 39.5778 16.1084C36.957 17.8477 33.8813 18.7753 30.7358 18.7749Z" fill="currentColor"/>
+            <path opacity="0.4" d="M30.7358 80L34.5301 71.0034C35.7531 68.1058 37.8029 65.633 40.4234 63.8939C43.0439 62.1547 46.1188 61.2265 49.2638 61.2251L45.4696 70.2217C44.2481 73.1203 42.1986 75.5941 39.5778 77.3335C36.957 79.0728 33.8813 80.0004 30.7358 80Z" fill="currentColor"/>
+            <path opacity="0.2" d="M61.2251 30.7361L70.2217 34.5304C73.1203 35.7519 75.5941 37.8013 77.3335 40.4221C79.0728 43.0429 80.0004 46.1186 80 49.2641L71.0034 45.4698C68.1058 44.2468 65.633 42.197 63.8939 39.5765C62.1547 36.9561 61.2265 33.8811 61.2251 30.7361Z" fill="currentColor"/>
+            <path opacity="0.7" d="M0 30.7361L8.99657 34.5304C11.8952 35.7519 14.369 37.8013 16.1084 40.4221C17.8477 43.0429 18.7753 46.1186 18.7749 49.2641L9.77829 45.4698C6.88074 44.2468 4.40789 42.197 2.66877 39.5765C0.929645 36.9561 0.00138685 33.8811 0 30.7361Z" fill="currentColor"/>
+          </g>
+          <defs>
+            <clipPath id="initial-loader-clip"><rect width="80" height="80" fill="white"/></clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
